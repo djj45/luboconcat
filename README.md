@@ -18,4 +18,4 @@ https://github.com/djj45/asoul/blob/master/ffmpeg.md#%E6%8B%BC%E6%8E%A5%E8%A7%86
 
 <img src="Snipaste_2022-03-28_21-20-40.png" alt="Snipaste_2022-03-28_21-20-40" width=700 />
 
-放在录播文件夹里面双击即可自动合并
+放在录播文件夹里面双击即可自动合并，文件夹内只允许有需要合并的录播
