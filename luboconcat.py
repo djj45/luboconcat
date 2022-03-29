@@ -58,9 +58,6 @@ def convert():
             L.append(file)
 
 
-L.sort(key=lambda x: int(x.split("-")[3].replace(".mp4", "").replace(".flv", "")))
-
-
 def writetxt(flvflag):
     if flvflag:
         with open("./_djj45_flv_/flv.txt", "w", encoding="utf-8") as flv:
@@ -117,6 +114,7 @@ if __name__ == "__main__":
     flvflag = isflv()
     mkdir(flvflag)
     convert()
+    L.sort(key=lambda x: int(x.split("-")[3].replace(".mp4", "").replace(".flv", "")))
     writetxt(flvflag)
     concat(flvflag)
     delete(flvflag)
