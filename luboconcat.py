@@ -114,7 +114,13 @@ if __name__ == "__main__":
     flvflag = isflv()
     mkdir(flvflag)
     convert()
-    L.sort(key=lambda x: int(x.split("-")[3].replace(".mp4", "").replace(".flv", "")))
+    L.sort(
+        key=lambda x: int(
+            x.split("-")[1]
+            + x.split("-")[2]
+            + x.split("-")[3].replace(".mp4", "").replace(".flv", "")
+        )
+    )
     writetxt(flvflag)
     concat(flvflag)
     delete(flvflag)
